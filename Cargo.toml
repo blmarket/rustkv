@@ -1,0 +1,19 @@
+[package]
+name = "rustkv"
+version = "0.1.0"
+authors = ["Jeong, Heon <blmarket@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocksdb = "0.15.0"
+avro-rs = "0.12.0"
+lambda_runtime = "^0.2"
+serde = "^1"
+serde_derive = "^1"
+serde_json = "^1"
+
+[[bin]]
+name = "bootstrap"
+path = "src/main.rs"
